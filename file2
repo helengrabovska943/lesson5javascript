@@ -1,0 +1,80 @@
+//My first alert
+alert("Who's here???");
+
+//My second alert
+alert("Is it you, AL?");
+
+//I'll try to console it here
+console.log("Such a lovely evening, isn't it?");
+
+//Variable Declarations about Colorado River (very interesting)
+var river = "the Colorado River";
+var coloradoLenghtInMiles = 1450;
+var whereIsThisRiver = "Rocky Mountains, Colorado, United States";
+var riversAge = 8000;
+
+console.log("The principal river of the Southwestern United States and northwest Mexico is " + river);
+console.log("Lenght of this river is " + coloradoLenghtInMiles + " miles");
+console.log("Location: " + whereIsThisRiver);
+console.log("And also Colorado River is pretty old: " + riversAge + " years");
+
+//Arrays that can make any girl to cry
+var cuteActor = ["Brad Pitt", "George Clooney", "Richard Gere"];
+var actorsAge = ["65", "54", "51"]
+var result = [cuteActor, actorsAge];
+
+console.log(result [0][1]);
+console.log(result [1][1]);
+
+//Testing means Don't trust anybody exept...
+console.log("everybody lies" === "everybody lies");
+console.log("exept math" + 666 === 777);
+console.log(coloradoLenghtInMiles < riversAge);
+
+//What if?..
+var priceApple = 500;
+
+if(300 < priceApple){
+	console.log("It's make sence to buy Apple Watch");
+}else{
+	console.log("Doesn't make any sence to buy this fancy item");
+}
+
+//Which holiday is closer?
+var todaysDate = 7;
+var fathersDayDate = 21;
+var independenceDayDate = 34;
+
+if(fathersDayDate > todaysDate){
+	alert("Father's Day - June 21");
+}else{
+	alert("Independence Day - July 4");
+}
+
+//My first calculator. It's probably not correct, but it works =)
+function calculator( x, y, operation ){
+	
+	var resultOfCalculator= 0;
+
+	if(operation == "division"){
+		resultOfCalculator = x/y;
+	}	
+	if(operation == "substraction"){
+		resultOfCalculator = x-y;
+	}
+	if(operation == "sum"){
+		resultOfCalculator = x+y;
+	}	
+	if(operation == "multiplication"){
+		resultOfCalculator = x*y;
+	}
+	alert(resultOfCalculator);
+}
+function calculate(){
+
+	var x = document.getElementById("number1").value;
+	var y = document.getElementById("number2").value;
+	var operation = document.getElementById("operationType").value;
+
+	calculator(parseInt(x), parseInt(y), operation);
+}
